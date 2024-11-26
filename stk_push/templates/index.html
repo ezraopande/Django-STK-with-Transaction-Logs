@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STK Push</title>
+  </head>
+  <body>
+    <h1>Safaricom STK Push</h1>
+    <form action="/stk_push/" method="post">
+      {% csrf_token %}
+      <label for="phone">Phone Number:</label><br />
+      <input type="text" id="phone" name="phone" required /><br /><br />
+      <label for="amount">Amount:</label><br />
+      <input type="number" id="amount" name="amount" required /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
