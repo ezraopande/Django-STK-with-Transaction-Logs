@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d%0j22cjkno87ry=qy0@!z--*&u01!9a*)hq62m*q!w9b1vo1v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['9756-2c0f-fe38-2327-df6a-d8b9-fba7-b3c8-9e80.ngrok-free.app', '127.0.0.1']
+ALLOWED_HOSTS = ['b6ec-217-199-146-223.ngrok-free.app', '127.0.0.1']
 
 
 # Application definition
@@ -70,6 +70,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'stk_push_project.wsgi.application'
 
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.apensoftwares.co.ke'
+EMAIL_PORT = 465  # SMTP Port for SSL
+EMAIL_USE_SSL = True  # Use SSL instead of TLS
+EMAIL_HOST_USER = 'django@apensoftwares.co.ke'
+EMAIL_HOST_PASSWORD = '-(LnYRXhKbpR'  # Replace with the actual email account's password
+DEFAULT_FROM_EMAIL = 'Apensoftwares <django@apensoftwares.co.ke>'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases

@@ -10,6 +10,9 @@ class Transaction(models.Model):
     description = models.TextField(blank=True, null=True)  
     transaction_date = models.DateTimeField(blank=True, null=True)  
     date_created = models.DateTimeField(auto_now_add=True)
+    email = models.EmailField(null=True, blank=True)
+    name = models.CharField(max_length=100, null=True, blank=True)
+
 
     def __str__(self):
         return f"Transaction {self.mpesa_receipt_number or self.transaction_id} - {self.status}"
