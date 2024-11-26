@@ -176,7 +176,7 @@ def callback(request):
                                 "Phone: 0796759850\n"
                                 "Powered by [Apen Softwares](https://apensoftwares.co.ke/)\n\n"
                                 "Best regards,\n"
-                                "Your Company Name"
+                                "Apen Softwares"
                             )
                             html_message = (
                                 f"<p>Dear {transaction.name},</p>"
@@ -185,7 +185,7 @@ def callback(request):
                                 f"<p>Should you have any questions, please feel free to reach us at:</p>"
                                 f"<p><strong>Phone:</strong> 0796759850</p>"
                                 f"<p>Powered by <a href='https://apensoftwares.co.ke/' target='_blank'>Apen Softwares</a></p>"
-                                f"<p>Best regards,<br>Your Company Name</p>"
+                                f"<p>Best regards,<br>Apen Softwares</p>"
                             )
                             send_mail(
                                 subject,
